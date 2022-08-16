@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background-image: url(./images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+}
+
+.generator__container {
+    width: 90vw;
+    height: 95vh;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: flex;
+    flex-direction: column;
+}
+
+.title, 
+.subtitle {
+    text-align: center;
+    font-family: 'Bungee', cursive;
+}
+
+.title {
+    color: #FFE81F;
+    font-size: 1.2rem;
+}
+
+.subtitle {
+    color: #FFF;
+    font-size: 0.8rem;
+    margin-top: -20px;
+}
+
+hr {
+    width: 90%;
+    align-self: center;
+}
+
+.informations__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.character__img {
+    width: 120px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 18px #555;
+}
+
+label {
+    color: #FFE81F;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+span {
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+/*===================GENERATE BUTTON=========================*/
+.flex__container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.generate__btn {
+    width: 150px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    border-radius: 45px;
+    background-color: #FFF;
+    color: #000;
+    font-family: 'Bungee', cursive;
+    
+    cursor: pointer;
+    transition: all ease-in .2s;
+}
+
+.generate__btn:hover {
+    background-color: #FFE81F;
+}
+
+
+@media only screen and (min-width: 1080px) {
+    .title {
+        font-size: 2rem;
+    }
+    
+    .subtitle {
+        font-size: 1.2rem;
+    }
+
+    .character__img {
+        width: 150px;
+        margin-bottom: 20px;
+    }
+
+    label,
+    span {
+        font-size: 1.2rem;
+    }
+    
+}
