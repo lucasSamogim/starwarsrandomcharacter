@@ -38,6 +38,7 @@ body {
 .title {
     color: #FFE81F;
     font-size: 1.2rem;
+    margin-top: 10px;
 }
 
 .subtitle {
